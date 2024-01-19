@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--홈화면 사용 색상-->
+    <color name="background_home">#FFF5F5F5</color>
+
+    <color name="pupple">#FFB3A0FF</color>
+    <color name="pupple_push">#FF8678BF</color>
+
+    <color name="yellow">#FFFFBD59</color>
+    <color name="yellow_push">#FFBF8E43</color>
+
+    <color name="skyblue">#FFA8CBFF</color>
+    <color name="skyblue_push">#FF7E98BF</color>
+
+    <color name="pink">#FFFB9FFD</color>
+    <color name="pink_push">#FFBC77BE</color>
+
+    <color name="mint">#FFB2EBB8</color>
+    <color name="mint_push">#FF85B08A</color>
+
+    <color name="negative">#FFD9D9D9</color>
+    <color name="white_60">#99FFFFFF</color>
+
+    <color name="bin">#00000000</color>
+    <color name="bin_push">#4F000000</color>
+    <color name="outline">#A6A6A6</color>
+
+</resources>

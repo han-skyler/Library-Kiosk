@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_home"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/presemibold"
+        android:text="원하시는 항목을 선택해주세요"
+        android:letterSpacing="-0.08"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx1">
+
+
+        <LinearLayout
+            android:id="@+id/layout_1st"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_notice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="7dp"
+                android:layout_weight="2"
+                android:background="@drawable/icon_pupple"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:id="@+id/tx_notice_eng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/icon_eng_home"
+                    android:fontFamily="@font/prelight"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Notice"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tx_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/preextrabold"
+                    android:letterSpacing="-0.08"
+                    android:text="공지사항"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tx_notice_txt"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tx_notice_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="55dp"
+                    android:fontFamily="@font/preregular"
+                    android:letterSpacing="-0.08"
+                    android:text="일반공지 ∙ 학술공지 ∙ 휴관일"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_weather"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:layout_weight="3"
+                android:padding="20dp"
+                android:background="@drawable/icon_skyblue">
+
+                <LinearLayout
+                    android:id="@+id/layout_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tx_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="01월 01일 금요일"
+                        android:fontFamily="@font/preregular"
+                        android:letterSpacing="-0.08"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tx_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00:00"
+                        android:fontFamily="@font/preregular"
+                        android:letterSpacing="-0.08"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_weather"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@color/bin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_weather" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_weather">
+
+                    <TextView
+                        android:id="@+id/tx_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="날씨"
+                        android:fontFamily="@font/prebold"
+                        android:letterSpacing="-0.08"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tx_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="30°"
+                        android:fontFamily="@font/prebold"
+                        android:letterSpacing="-0.08"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"/>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2nd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="7dp"
+                android:paddingStart="20dp"
+                android:layout_weight="3"
+                android:background="@drawable/icon_yellow">
+
+                <TextView
+                    android:id="@+id/tx_navigation_eng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/icon_eng_home"
+                    android:fontFamily="@font/prelight"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Navigation"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tx_navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/preextrabold"
+                    android:letterSpacing="-0.08"
+                    android:text="길안내"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tx_navigation_txt"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tx_navigation_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="55dp"
+                    android:fontFamily="@font/preregular"
+                    android:letterSpacing="-0.08"
+                    android:text="주요시설 길안내"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_2nd_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:paddingStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_pink">
+
+                    <TextView
+                        android:id="@+id/tx_search_eng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_eng_home"
+                        android:fontFamily="@font/prelight"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="Search"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tx_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/preextrabold"
+                        android:letterSpacing="-0.08"
+                        android:text="도서검색"
+                        android:textColor="@color/black"
+                        android:textSize="26sp"
+                        app:layout_constraintBottom_toTopOf="@+id/tx_search_txt"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tx_search_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/preregular"
+                        android:letterSpacing="-0.08"
+                        android:text="소장 인쇄자료 ∙ 구독 전자자료"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    android:background="@drawable/icon_mint">
+
+                    <TextView
+                        android:id="@+id/tx_recommend_eng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_eng_home"
+                        android:fontFamily="@font/prelight"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="Recommend"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tx_recommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/preextrabold"
+                        android:letterSpacing="-0.08"
+                        android:text="도서추천"
+                        android:textColor="@color/black"
+                        android:textSize="26sp"
+                        app:layout_constraintBottom_toTopOf="@+id/tx_recommend_txt"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tx_recommend_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/preregular"
+                        android:letterSpacing="-0.08"
+                        android:text="사서추천도서 ∙ 개인추천도서"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
