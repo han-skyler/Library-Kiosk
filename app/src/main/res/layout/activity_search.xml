@@ -4,6 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Search">
+    tools:context=".Search"
+    android:background="@color/background_home">
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="찾으시는 책이 있나요?"
+        android:letterSpacing="-0.08"
+        android:textSize="24sp"
+        android:fontFamily="@font/presemibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@drawable/round_solid"
+        android:backgroundTint="@color/white"
+        android:paddingStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="검색어를 입력해주세요"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_search"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_search"
+        app:layout_constraintEnd_toEndOf="@+id/et_search"
+        app:layout_constraintTop_toTopOf="@+id/et_search" />
+
+    <TextView
+        android:id="@+id/btn_search"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:text="검색"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:fontFamily="@font/presemibold"
+        android:letterSpacing="-0.08"
+        android:background="@drawable/btn_search"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search" />
 </androidx.constraintlayout.widget.ConstraintLayout>

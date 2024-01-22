@@ -26,6 +26,6 @@
 
     <color name="bin">#00000000</color>
     <color name="bin_push">#4F000000</color>
-    <color name="outline">#A6A6A6</color>
+    <color name="outline">#FFA6A6A6</color>
 
 </resources>
