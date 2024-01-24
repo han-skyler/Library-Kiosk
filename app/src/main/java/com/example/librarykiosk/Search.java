@@ -9,12 +9,16 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Search extends AppCompatActivity {
 
     private TextView mBtnSearch;
-    private EditText mEtSerch;
+    private EditText mEtSearch;
+    private ImageView mSearch;
+    private LinearLayout mBtnGoback;
     String Keyword;
     String URL;
 
@@ -24,10 +28,11 @@ public class Search extends AppCompatActivity {
         setContentView(R.layout.activity_search);
 
         mBtnSearch = findViewById(R.id.btn_search);
-        mEtSerch = findViewById(R.id.et_search);
+        mEtSearch = findViewById(R.id.et_search);
+        mSearch = findViewById(R.id.icon_search);
 
         // 검색창에 입력이 감지되었을 때, 검색 버튼 활성화
-        mEtSerch.addTextChangedListener(new TextWatcher() {
+        mEtSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 // 이 메서드를 사용하지 않음
@@ -53,10 +58,10 @@ public class Search extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 검색창의 문자열을 저장한다
-                Keyword = mEtSerch.getText().toString();
+                Keyword = mEtSearch.getText().toString();
 
                 // 검색결과 페이지 URL 지정
-                URL = "https://library.chosun.ac.kr/searchTotal/result?st=KWRD&si=TOTAL&q=" + Keyword + "&x=16&y=3";
+                URL = "https://library.chosun.ac.kr/search/laz/result?st=KWRD&si=TOTAL&q=" + Keyword;
                 Intent intent = new Intent(Search.this, WebActivity.class);
 
                 // 웹페이지로 검색어와 URL 전달
@@ -64,6 +69,26 @@ public class Search extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        mSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 검색창의 문자열을 저장한다
+                Keyword = mEtSearch.getText().toString();
+
+                // 검색결과 페이지 URL 지정
+                URL = "https://library.chosun.ac.kr/search/laz/result?st=KWRD&si=TOTAL&q=" + Keyword;
+                Intent intent = new Intent(Search.this, WebActivity.class);
+
+                // 웹페이지로 검색어와 URL 전달
+                intent.putExtra("URL",URL);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
 
     }

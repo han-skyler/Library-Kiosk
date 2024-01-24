@@ -6,4 +6,168 @@
     android:layout_height="match_parent"
     tools:context=".Navigation">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:background="@color/navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tx_enter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingTop="40dp"
+            android:text="입구"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tx_area1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="구역1"
+            android:background="@drawable/icon_area"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_enter" />
+
+        <TextView
+            android:id="@+id/tx_area2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="구역2"
+            android:background="@drawable/icon_area"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/tx_area1"
+            app:layout_constraintTop_toBottomOf="@+id/tx_enter" />
+
+        <TextView
+            android:id="@+id/tx_area3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="구역3"
+            android:background="@drawable/icon_area"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/tx_area2"
+            app:layout_constraintTop_toBottomOf="@+id/tx_enter" />
+
+        <TextView
+            android:id="@+id/tx_desk1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="책상1"
+            android:background="@drawable/icon_area"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_area1" />
+
+        <TextView
+            android:id="@+id/tx_desk2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="책상2"
+            android:background="@drawable/icon_area"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/tx_desk1"
+            app:layout_constraintTop_toBottomOf="@+id/tx_area1" />
+
+        <TextView
+            android:id="@+id/tx_desk3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="책상3"
+            android:background="@drawable/icon_area"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/tx_desk2"
+            app:layout_constraintTop_toBottomOf="@+id/tx_area1" />
+
+        <TextView
+            android:id="@+id/tx_etc1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="화장실"
+            android:background="@color/negative"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_desk1" />
+
+        <TextView
+            android:id="@+id/tx_etc2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textColor="@color/bin"
+            android:background="@color/negative"
+            android:fontFamily="@font/preregular"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/tx_etc1"
+            app:layout_constraintTop_toBottomOf="@+id/tx_desk1" />
+
+        <TextView
+            android:id="@+id/tx_exit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="출구"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/preregular"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/tx_etc2"
+            app:layout_constraintTop_toBottomOf="@+id/tx_desk1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.example.librarykiosk.MapView
+        android:id="@+id/mabView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
