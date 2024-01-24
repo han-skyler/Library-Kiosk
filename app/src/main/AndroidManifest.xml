@@ -16,6 +16,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".WebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebView"
+            android:exported="false" />
+        <activity
             android:name=".Recommend"
             android:exported="false" />
         <activity
