@@ -1,4 +1,4 @@
-package com.example.librarykiosk;
+package com.example.librarykiosk.menu;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.caverock.androidsvg.SVG;
+import com.example.librarykiosk.R;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

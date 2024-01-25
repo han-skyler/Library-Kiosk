@@ -1,4 +1,4 @@
-package com.example.librarykiosk;
+package com.example.librarykiosk.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.librarykiosk.R;
+import com.example.librarykiosk.view.WebActivity;
 
 public class Search extends AppCompatActivity {
 

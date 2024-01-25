@@ -1,4 +1,4 @@
-package com.example.librarykiosk;
+package com.example.librarykiosk.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -200,9 +200,4 @@ public class MapView extends View {
             this.parent = parent;
         }
     }
-
-
-
-
-
 }

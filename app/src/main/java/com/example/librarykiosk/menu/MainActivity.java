@@ -1,14 +1,16 @@
-package com.example.librarykiosk;
+package com.example.librarykiosk.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Navigation extends AppCompatActivity {
+import com.example.librarykiosk.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navigation);
+        setContentView(R.layout.activity_main);
     }
 }

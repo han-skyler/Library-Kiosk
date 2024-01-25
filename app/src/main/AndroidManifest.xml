@@ -16,28 +16,76 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".mbti.TestPage"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Result_mbti"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page14"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page13"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page12"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page11"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page10"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page9"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page8"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page7"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page6"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page5"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page4"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page3"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page2"
+            android:exported="false" />
+        <activity
+            android:name=".mbti.Page1"
+            android:exported="false" />
+        <activity
             android:name=".MapActivity"
             android:exported="false" />
         <activity
-            android:name=".WebActivity"
+            android:name=".view.WebActivity"
             android:exported="false" />
         <activity
             android:name=".WebView"
             android:exported="false" />
         <activity
-            android:name=".Recommend"
+            android:name=".menu.Recommend"
             android:exported="false" />
         <activity
-            android:name=".Search"
+            android:name=".menu.Search"
             android:exported="false" />
         <activity
-            android:name=".Navigation"
+            android:name=".menu.Navigation"
             android:exported="false" />
         <activity
-            android:name=".Notice"
+            android:name=".menu.Notice"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".menu.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,7 +94,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".menu.MainActivity"
             android:exported="false" />
     </application>
 

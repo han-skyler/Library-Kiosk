@@ -1,4 +1,4 @@
-package com.example.librarykiosk;
+package com.example.librarykiosk.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -11,6 +11,9 @@ import android.webkit.WebView;
 import android.os.Bundle;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
+
+import com.example.librarykiosk.R;
+import com.example.librarykiosk.menu.HomeActivity;
 
 public class WebActivity extends AppCompatActivity {
 

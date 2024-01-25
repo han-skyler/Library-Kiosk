@@ -1,14 +1,16 @@
-package com.example.librarykiosk;
+package com.example.librarykiosk.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Recommend extends AppCompatActivity {
+import com.example.librarykiosk.R;
+
+public class Notice extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recommend);
+        setContentView(R.layout.activity_notice);
     }
 }

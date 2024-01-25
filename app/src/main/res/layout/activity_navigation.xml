@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Navigation">
+    tools:context=".menu.Navigation">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="320dp"
@@ -161,7 +161,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.example.librarykiosk.MapView
+    <com.example.librarykiosk.view.MapView
         android:id="@+id/mabView"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
