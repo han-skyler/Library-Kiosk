@@ -1,0 +1,10 @@
+<!-- res/drawable/selected_textview_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid
+        android:color="@color/skyblue"
+        />
+    <stroke
+        android:width="2dp"
+        android:color="@color/pink" />
+</shape>

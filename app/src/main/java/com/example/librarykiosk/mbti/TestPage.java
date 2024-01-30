@@ -13,7 +13,6 @@ import com.example.librarykiosk.R;
 
 public class TestPage extends AppCompatActivity {
     private int currentQuestionIndex = 0;
-    private MBTIscore mbtiScore;
     int M=0,B=0,T=0,I=0;
     private QuestionList[] questions = new QuestionList[]{
             new QuestionList("1",
@@ -73,7 +72,7 @@ public class TestPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_page);
 
-        mbtiScore = new MBTIscore();
+        //mbtiScore = new MBTIscore();
         option1Button = findViewById(R.id.tx_a1);
         option2Button = findViewById(R.id.tx_a2);
         questionTextView = findViewById(R.id.tx_question);

@@ -6,7 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".menu.Navigation">
 
+    <TextView
+        android:id="@+id/tx_explain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/preregular"
+        android:textSize="20sp"
+        android:letterSpacing="-0.08"
+        android:text="화면을 터치하여 목적지 선택해주세요"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_explain" />
+
+    <com.example.librarykiosk.view.MapView
+        android:id="@+id/mabView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="320dp"
         android:layout_height="400dp"
         android:background="@color/navigation"
@@ -19,12 +41,12 @@
             android:id="@+id/tx_enter"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:fontFamily="@font/preregular"
+            android:gravity="center"
             android:paddingTop="40dp"
             android:text="입구"
-            android:gravity="center"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:fontFamily="@font/preregular"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,12 +55,12 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="40dp"
-            android:gravity="center"
             android:text="구역1"
             android:background="@drawable/icon_area"
-            android:textSize="18sp"
-            android:textColor="@color/black"
+            android:gravity="center"
             android:fontFamily="@font/preregular"
+            android:textColor="@color/black"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tx_enter" />
 
@@ -46,14 +68,14 @@
             android:id="@+id/tx_area2"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/icon_area"
+            android:fontFamily="@font/preregular"
             android:gravity="center"
             android:text="구역2"
-            android:background="@drawable/icon_area"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:fontFamily="@font/preregular"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/tx_area1"
             app:layout_constraintTop_toBottomOf="@+id/tx_enter" />
 
@@ -61,14 +83,14 @@
             android:id="@+id/tx_area3"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
             android:text="구역3"
             android:background="@drawable/icon_area"
-            android:textSize="18sp"
-            android:textColor="@color/black"
+            android:gravity="center"
             android:fontFamily="@font/preregular"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/tx_area2"
             app:layout_constraintTop_toBottomOf="@+id/tx_enter" />
 
@@ -77,12 +99,12 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="40dp"
+            android:background="@drawable/icon_area"
+            android:fontFamily="@font/preregular"
             android:gravity="center"
             android:text="책상1"
-            android:background="@drawable/icon_area"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:fontFamily="@font/preregular"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tx_area1" />
 
@@ -90,14 +112,14 @@
             android:id="@+id/tx_desk2"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/icon_area"
+            android:fontFamily="@font/preregular"
             android:gravity="center"
             android:text="책상2"
-            android:background="@drawable/icon_area"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:fontFamily="@font/preregular"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/tx_desk1"
             app:layout_constraintTop_toBottomOf="@+id/tx_area1" />
 
@@ -105,14 +127,14 @@
             android:id="@+id/tx_desk3"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/icon_area"
+            android:fontFamily="@font/preregular"
             android:gravity="center"
             android:text="책상3"
-            android:background="@drawable/icon_area"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:fontFamily="@font/preregular"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/tx_desk2"
             app:layout_constraintTop_toBottomOf="@+id/tx_area1" />
 
@@ -121,12 +143,12 @@
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_marginTop="40dp"
+            android:background="@drawable/icon_area"
+            android:fontFamily="@font/preregular"
             android:gravity="center"
             android:text="화장실"
-            android:background="@color/negative"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:fontFamily="@font/preregular"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tx_desk1" />
 
@@ -134,14 +156,14 @@
             android:id="@+id/tx_etc2"
             android:layout_width="80dp"
             android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/icon_area"
+            android:fontFamily="@font/preregular"
             android:gravity="center"
             android:text="TextView"
-            android:textSize="18sp"
             android:textColor="@color/bin"
-            android:background="@color/negative"
-            android:fontFamily="@font/preregular"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/tx_etc1"
             app:layout_constraintTop_toBottomOf="@+id/tx_desk1" />
 
@@ -149,25 +171,102 @@
             android:id="@+id/tx_exit"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/preregular"
             android:gravity="center"
             android:text="출구"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:fontFamily="@font/preregular"
-            android:layout_marginStart="40dp"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/tx_etc2"
             app:layout_constraintTop_toBottomOf="@+id/tx_desk1" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.example.librarykiosk.view.MapView
-        android:id="@+id/mabView"
-        android:layout_width="320dp"
+    <TextView
+        android:id="@+id/tx_explain"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/prebold"
+        android:letterSpacing="-0.08"
+        android:text="어디로 안내할까요?"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_goback" />
+
+    <LinearLayout
+        android:id="@+id/btn_goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="16dp"
+            android:layout_height="16sp"
+            android:src="@drawable/icon_goback_black" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/preregular"
+            android:letterSpacing="-0.08"
+            android:text="뒤로가기"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목적지"
+            android:textSize="24sp"
+            android:fontFamily="@font/preregular"
+            android:letterSpacing="-0.08"/>
+
+        <TextView
+            android:id="@+id/tx_reach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text=" "
+            android:textColor="@color/skyblue_push"
+            android:textSize="24sp"
+            android:fontFamily="@font/presemibold"
+            android:letterSpacing="-0.08"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_start_navigation"
+        android:fontFamily="@font/preregular"
+        android:gravity="center"
+        android:text="안내시작"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,6 @@ import com.example.librarykiosk.menu.HomeActivity;
 import com.example.librarykiosk.menu.Recommend;
 
 public class Result_mbti extends AppCompatActivity {
-    private MBTIscore mbtiScore;
     private int M,B,T,I;
     private TextView mbtiHash, bookName, bookText, hashTag;
     private ImageView imgBook;
