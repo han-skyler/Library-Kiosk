@@ -98,7 +98,6 @@ public class Navigation extends AppCompatActivity {
                 onTextViewClicked(mTxEtc2);
             }
         });
-
     }
 
     private void onTextViewClicked(TextView textView) {

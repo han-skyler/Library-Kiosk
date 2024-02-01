@@ -96,7 +96,7 @@ public class MapView extends View {
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == 1) {
-                    // 블럭의 색상 지정
+                    // 블럭의 색상 지정 : 투명
                     paint.setColor((Color.argb(0,255,0,0)));
                     //paint.setColor(Color.GRAY);
                     canvas.drawRect(j * cellSize, i * cellSize, (j + 1) * cellSize, (i + 1) * cellSize, paint);
@@ -130,17 +130,21 @@ public class MapView extends View {
 
             if (endX == -1 && endY == -1) { // 첫 번째와 두 번째 터치를 처리
                 if (startX == -1 && startY == -1) {
-                    startX = x;
-                    startY = y;
+//                    startX = x;
+//                    startY = y;
+                    startX = 2;
+                    startY = 0;
                 } else {
-                    endX = x;
-                    endY = y;
+//                    endX = x;
+//                    endY = y;
+                    endX = 8;
+                    endY = 5;
                 }
             } else { // 세 번째 터치 처리 (첫 번째 위치를 새로운 시작점으로 업데이트)
-                startX = x;
-                startY = y;
-                endX = -1;
-                endY = -1;
+//                startX = x;
+//                startY = y;
+//                endX = -1;
+//                endY = -1;
             }
             Log.d("Touch Event", "Touch at: (" + x + ", " + y + ")");
             invalidate(); // 화면 다시 그리기
@@ -164,7 +168,7 @@ public class MapView extends View {
                 int newX = current.x + dir[0];
                 int newY = current.y + dir[1];
                 if (isValid(newX, newY, visited)) {
-                    Log.d("MapView", "Exploring: (" + current.x + ", " + current.y + ")");
+                    //Log.d("MapView", "경로추가: (" + current.x + ", " + current.y + ")");
                     visited[newX][newY] = true;
                     queue.add(new Node(newX, newY, current));
                 }
@@ -180,7 +184,8 @@ public class MapView extends View {
             path.addFirst(node);
             node = node.parent;
         }
-        Log.d("getPath", "Path : (" + path + ")");
+
+        Log.d("getPath", "Path : (" + path.toString() + ")");
         return path;
     }
 
@@ -198,6 +203,13 @@ public class MapView extends View {
             this.x = x;
             this.y = y;
             this.parent = parent;
+
+            //Log.d("노드", "X : (" + x + ") Y : ("+y+") parent : ("+parent+")");
+        }
+
+        @Override
+        public String toString() {
+            return "(" + x + ", " + y + ")";
         }
     }
 }

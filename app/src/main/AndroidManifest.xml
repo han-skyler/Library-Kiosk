@@ -22,55 +22,7 @@
             android:name=".mbti.Result_mbti"
             android:exported="false" />
         <activity
-            android:name=".mbti.Page14"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page13"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page12"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page11"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page10"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page9"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page8"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page7"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page6"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page5"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page4"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page3"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page2"
-            android:exported="false" />
-        <activity
-            android:name=".mbti.Page1"
-            android:exported="false" />
-        <activity
-            android:name=".MapActivity"
-            android:exported="false" />
-        <activity
             android:name=".view.WebActivity"
-            android:exported="false" />
-        <activity
-            android:name=".WebView"
             android:exported="false" />
         <activity
             android:name=".menu.Recommend"

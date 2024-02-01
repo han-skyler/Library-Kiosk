@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LibraryKiosk</string>
+    <string name="app_name">도서관 키오스크</string>
     <string name="notice_eng">Notice</string>
 
 </resources>
