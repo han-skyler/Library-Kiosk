@@ -11,9 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/preregular"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:letterSpacing="-0.08"
-        android:text="화면을 터치하여 목적지 선택해주세요"
+        android:text="저를 따라오세요"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tx_explain" />
@@ -189,8 +190,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/prebold"
         android:letterSpacing="-0.08"
-        android:text="어디로 안내할까요?"
-        android:textColor="@color/black"
+        android:text="길안내중..."
+        android:textColor="@color/gray_400"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -248,7 +249,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text=" "
+            android:text="책상2"
             android:textColor="@color/skyblue_push"
             android:textSize="24sp"
             android:fontFamily="@font/presemibold"
@@ -256,10 +257,10 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/btn_start"
+        android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/btn_start_navigation"
+        android:background="@color/negative"
         android:fontFamily="@font/preregular"
         android:gravity="center"
         android:text="안내시작"
@@ -268,5 +269,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.librarykiosk.view.MovingImageView
+        android:id="@+id/movingImageView"
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

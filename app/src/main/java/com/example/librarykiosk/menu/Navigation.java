@@ -3,6 +3,7 @@ package com.example.librarykiosk.menu;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import com.example.librarykiosk.R;
 
 public class Navigation extends AppCompatActivity {
 
-    private TextView mTxArea1, mTxArea2, mTxArea3, mTxDesk1, mTxDesk2, mTxDesk3, mTxEtc1, mTxEtc2, mTxReach;
+    private TextView mTxArea1, mTxArea2, mTxArea3, mTxDesk1, mTxDesk2, mTxDesk3, mTxEtc1, mTxEtc2, mTxReach, mBtnStart;
     private TextView selectedTextView = null;
 
 
@@ -34,6 +35,8 @@ public class Navigation extends AppCompatActivity {
         mTxEtc2 = findViewById(R.id.tx_etc2);
 
         mTxReach = findViewById(R.id.tx_reach);
+
+        mBtnStart = findViewById(R.id.btn_start);
 
         mTxArea1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,6 +101,14 @@ public class Navigation extends AppCompatActivity {
                 onTextViewClicked(mTxEtc2);
             }
         });
+
+        mBtnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Navigation.this, Navigation_start.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void onTextViewClicked(TextView textView) {
@@ -114,4 +125,6 @@ public class Navigation extends AppCompatActivity {
 
         //textView.setTextColor(Color.parseColor("#FFA8CBFF"));
     }
+
+
 }

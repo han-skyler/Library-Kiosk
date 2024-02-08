@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.caverock.androidsvg.SVG;
 import com.example.librarykiosk.R;
+import com.example.librarykiosk.mbti.TestPage;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -75,7 +76,7 @@ public class HomeActivity extends AppCompatActivity {
         mBtnRecommend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(HomeActivity.this, Recommend.class);
+                intent = new Intent(HomeActivity.this, TestPage.class);
                 startActivity(intent);
             }
         });

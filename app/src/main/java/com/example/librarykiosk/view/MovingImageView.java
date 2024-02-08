@@ -165,7 +165,7 @@ public class MovingImageView extends RelativeLayout {
         });
     }
 
-   private void moveImageViewToCoordinate(final View view, int x, int y) {
+    private void moveImageViewToCoordinate(final View view, int x, int y) {
         if (cellSize == 0) {
             initGrid();
         }
